@@ -2,10 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Welcome') {
+
+        stage('Build') {
             steps {
-                echo 'Hello from my first Jenkins Declarative Pipeline!'
+                sh 'pwd'
+                sh 'ls -la'
+                echo 'Build stage completed'
             }
         }
+
     }
 }
